@@ -3,6 +3,9 @@
   height: max-content;
   display: flex;
   flex-direction: column;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 /* ПАТТЕРНЫ */
@@ -18,9 +21,62 @@
 /* ШАПКА САЙТА */
 
 .header {
-  padding: 37px 370px 0;
-  width: 100%;
-  height: max-content;
+  position: absolute;
+  top: 50px;
+  left: 426px;
+  height: 82px;
+  display: flex;
+  flex-direction: row;
+  gap: 550px;
+}
+
+.header__title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 143%;
+  letter-spacing: 0;
+  color: rgb(255, 255, 255);
+}
+
+.header__address {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+.header__address-item {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.header__address-item div {
+  margin-top: -10px;
+}
+
+.header__address-logo {
+  width: 19px;
+  height: 19px;
+}
+
+.header__address-text {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: rgb(255, 255, 255);
+}
+
+.header__address-link {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 /* ОСНОВАНАЯ ЧАСТЬ САЙТА */
