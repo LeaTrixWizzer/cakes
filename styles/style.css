@@ -214,9 +214,123 @@
 /* СЕКЦИЯ С КАТАЛОГОМ */
 
 .catalog {
+  position: relative;
   padding: 0 370px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.catalog-title {
+  margin-bottom: 80px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -1px;
+  color: rgb(46, 54, 62);
+  user-select: none;
+}
+
+.catalog__card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.catalog__card-list-item {
+  list-style-type: none;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-image {
+  border-radius: 10px 10px 0 0;
+  width: 380px;
+}
+
+.card-title {
+  margin: 45px 0 0 44px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 143%;
+  letter-spacing: 0;
+  color: rgb(46, 54, 62);
+  user-select: none;
+}
+
+.card-text {
+  margin: 12px 0 0 44px;
+  max-width: 240px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: rgb(46, 54, 62);
+  user-select: none;
+}
+
+.card__container {
+  margin: 24px 0 50px 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card__container-price {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: rgba(67, 75, 83);
+  user-select: none;
+}
+
+.card__container-button {
+  border: none;
+  padding: 20px 40px;
+  width: max-content;
+  background: rgba(254, 216, 76);
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 152%;
+  letter-spacing: 0;
+  color: rgb(46, 54, 62);
+  cursor: pointer;
+  user-select: none;
+}
+
+.catalog img:nth-child(3) {
+  top: 250px;
+  left: 240px;
+  width: 170px;
+  height: 174px;
+  transform: rotate(-63deg);
+  filter: blur(5px);
+}
+
+.catalog img:nth-child(4) {
+  top: 1025px;
+  left: 1523px;
+  width: 161px;
+  height: 167px;
+  transform: rotate(-180deg);
+  filter: blur(14px);
+}
+
+.catalog img:nth-child(5) {
+  top: 1381px;
+  left: 252px;
+  width: 109px;
+  height: 113px;
+  transform: rotate(93deg);
+  filter: blur(14px);
 }
 
 /* СЕКЦИЯ С ОТПРАВКОЙ СВОЕГО ФОТО */
