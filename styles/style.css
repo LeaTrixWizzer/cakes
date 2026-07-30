@@ -18,12 +18,19 @@
   background: rgb(8, 17, 48);
 }
 
+.page-accent {
+  position: absolute;
+  z-index: 5;
+  object-fit: cover;
+}
+
 /* ШАПКА САЙТА */
 
 .header {
   position: absolute;
-  top: 50px;
-  left: 426px;
+  z-index: 1;
+  top: 45px;
+  left: 550px;
   height: 82px;
   display: flex;
   flex-direction: row;
@@ -37,6 +44,7 @@
   line-height: 143%;
   letter-spacing: 0;
   color: rgb(255, 255, 255);
+  user-select: none;
 }
 
 .header__address {
@@ -83,15 +91,124 @@
 
 .main {
   width: 100%;
-  height: 100px;
+  height: max-content;
 }
 
 /* СЕКЦИЯ С ВИЗИТНОЙ КАРТОЧКОЙ */
 
 .cover {
-  padding: 188px 0 465px 370px;
+  position: relative;
+  z-index: 0;
+  padding: 307px 0 465px 370px;
+  width: 1920px;
+  max-height: 1234px;
+  background: url(../images/cover.jpg);
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.cover__subtitle {
+  width: max-content;
+  height: max-content;
+  border-radius: 5px;
+  padding: 10px 18px;
+  background: rgb(242, 246, 250);
+}
+
+.cover__subtitle-text {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 150%;
+  letter-spacing: 10%;
+  color: rgb(46, 54, 62);
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.cover__title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -2%;
+  color: rgb(255, 255, 255);
+}
+
+.cover__text {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 143%;
+  letter-spacing: 0;
+  color: rgb(255, 255, 255);
+}
+
+.cover__container {
+  margin-top: 23px;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cover__container-button {
+  padding: 30px 50px;
+  border-radius: 8px;
+  background: rgba(254, 216, 76);
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 152%;
+  letter-spacing: 0;
+  color: rgb(46, 54, 62);
+  cursor: pointer;
+}
+
+.cover__container-text {
+  margin-left: 21px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0;
+  color: rgb(255, 255, 255);
+}
+
+.cover img:nth-child(5) {
+  top: 138px;
+  left: 1785px;
+  width: 170px;
+  height: 175px;
+  transform: rotate(28deg);
+}
+
+.cover img:nth-child(6) {
+  top: 240px;
+  right: 1780px;
+  width: 195px;
+  height: 201px;
+  transform: rotate(-45deg);
+}
+
+.cover img:nth-child(7) {
+  top: 910px;
+  left: 1510px;
+  width: 195px;
+  height: 201px;
+  transform: rotate(-148deg);
+}
+
+.cover img:nth-child(8) {
+  top: 965px;
+  right: 1710px;
+  width: 275px;
+  height: 286px;
+  transform: rotate(-156deg);
+  filter: blur(5px);
 }
 
 /* СЕКЦИЯ С КАТАЛОГОМ */
