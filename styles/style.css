@@ -1,0 +1,91 @@
+.page {
+  width: 1920px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ПАТТЕРНЫ */
+
+.content__theme-bright {
+  background: rgb(255, 255, 255);
+}
+
+.content__theme-dark {
+  background: rgb(8, 17, 48);
+}
+
+/* ШАПКА САЙТА */
+
+.header {
+  padding: 37px 370px 0;
+  width: 100%;
+  height: max-content;
+}
+
+/* ОСНОВАНАЯ ЧАСТЬ САЙТА */
+
+.main {
+  width: 100%;
+  height: 100px;
+}
+
+/* СЕКЦИЯ С ВИЗИТНОЙ КАРТОЧКОЙ */
+
+.cover {
+  padding: 188px 0 465px 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* СЕКЦИЯ С КАТАЛОГОМ */
+
+.catalog {
+  padding: 0 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* СЕКЦИЯ С ОТПРАВКОЙ СВОЕГО ФОТО */
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* СЕКЦИЯ С ТЕМ КТО БУДЕТ ГОТОВИТЬ */
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+/* СЕКЦИЯ С ОТЗЫВАМИ */
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+/* СЕКЦИЯ С ГАЛЕРЕЕЙ */
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+/* СЕЦИЯ С ФОРМОЙ */
+
+.reqest {
+  padding: 0 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ПОДВАЛ САЙТА */
+
+.footer {
+  padding: 80px 0;
+  width: 100%;
+  height: 100px;
+}
