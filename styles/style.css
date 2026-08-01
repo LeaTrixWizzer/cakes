@@ -1,4 +1,5 @@
 .page {
+  position: relative;
   width: 1920px;
   height: max-content;
   display: flex;
@@ -1051,7 +1052,47 @@
 /* ПОДВАЛ САЙТА */
 
 .footer {
-  padding: 80px 0;
-  width: 100%;
-  height: 100px;
+  position: absolute;
+  left: 657.5px;
+  bottom: 80px;
+  width: max-content;
+  height: max-content;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  gap: 43px;
+}
+
+.footer-list-item {
+  list-style-type: none;
+}
+
+.footer-link {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: rgb(126, 134, 142);
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.footer-copyright-symbol {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: rgb(126, 134, 142);
+  user-select: none;
+  cursor: default;
 }
