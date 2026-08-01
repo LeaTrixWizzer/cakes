@@ -879,10 +879,173 @@
 
 /* СЕЦИЯ С ФОРМОЙ */
 
-.reqest {
-  padding: 0 370px;
+.request {
+  position: relative;
+  padding: 305px 0 218px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.request__form {
+  padding: 70px 160px;
+  width: max-content;
+  height: max-content;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.request__form-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 133%;
+  letter-spacing: 0;
+  color: rgb(46, 54, 62);
+  user-select: none;
+}
+
+.request__form-subtitle {
+  margin-top: 12px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 143%;
+  letter-spacing: -0.2px;
+  color: rgb(46, 54, 62);
+  user-select: none;
+}
+
+.request__form-content {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.request__form-content div {
+  width: 100%;
+  height: 85px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-input {
+  position: relative;
+  border-radius: 8px;
+  width: 380px;
+  height: 100%;
+  background: rgb(242, 246, 250);
+}
+
+.form-input::before {
+  position: absolute;
+  top: 30px;
+  left: 26px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: url(../images/phone-vector.png) center no-repeat;
+}
+
+.form-input input {
+  padding: 32px 0 29px 58px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 160%;
+}
+
+.form-input input::placeholder {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0;
+  color: rgb(126, 134, 142);
+  user-select: none;
+}
+
+.form-button {
+  border: none;
+  border-radius: 8px;
+  padding: 29px 123.5px;
+  background: rgba(254, 216, 76);
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 152%;
+  letter-spacing: 0;
+  color: rgb(46, 54, 62);
+  user-select: none;
+  cursor: pointer;
+}
+
+.form-agreement {
+  text-align: center;
+}
+
+.form-agreement-checkbox {
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.form-agreement-text {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 130%;
+  letter-spacing: 0;
+  color: rgb(126, 134, 142);
+  user-select: none;
+  cursor: pointer;
+}
+
+.form-agreement-link {
+  text-decoration: underline;
+}
+
+.request img:nth-child(3) {
+  top: 227px;
+  left: 1513px;
+  width: 152px;
+  height: 156px;
+  transform: rotate(31deg);
+}
+
+.request img:nth-child(4) {
+  top: 632px;
+  left: 224px;
+  width: 167px;
+  height: 171px;
+  transform: rotate(-127deg);
+}
+
+.request img:nth-child(5) {
+  top: 226px;
+  left: 274px;
+  width: 107px;
+  height: 111px;
+  transform: rotate(-95deg);
+  filter: blur(7px);
+}
+
+.request img:nth-child(6) {
+  top: 650px;
+  left: 1530px;
+  width: 147px;
+  height: 153px;
+  transform: rotate(76deg);
+  filter: blur(7px);
 }
 
 /* ПОДВАЛ САЙТА */
