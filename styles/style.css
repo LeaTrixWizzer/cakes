@@ -611,8 +611,229 @@
 /* СЕКЦИЯ С ОТЗЫВАМИ */
 
 .reviews {
+  position: relative;
+  margin-top: -50px;
+  width: 100%;
+  height: max-content;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.reviews-title {
+  margin-top: 300px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -1px;
+  color: rgb(255, 255, 255);
+  user-select: none;
+}
+
+.reviews__containers {
+  position: relative;
+  margin-top: 80px;
+  width: max-content;
+  height: 615px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  object-fit: cover;
+}
+
+.review-card {
+  position: relative;
+  border: 2px solid rgb(226, 234, 242);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+}
+
+.review-card-active {
+  padding: 70px 148px;
+  width: 1180px;
+  height: 100%;
+  gap: 65px;
+}
+
+.review-card-inactive {
+  padding: 55px 113px;
+  width: 934px;
+  height: 486px;
+  gap: 65px;
+  opacity: 0.06;
+}
+
+.review-card-active .review-text {
+  margin-left: -7px;
+  max-width: 450px;
+}
+
+.review-card-inactive .review-text {
+  margin-left: -1px;
+  max-width: 380px;
+}
+
+.review-card svg {
+  margin: 2px 0 26px;
+}
+
+.review-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 143%;
+  letter-spacing: 0;
+  color: rgb(46, 54, 62);
+  user-select: none;
+}
+
+.review-card-active .review-title {
+  font-size: 30px;
+}
+
+.review-card-inactive .review-title {
+  font-size: 23.75px;
+}
+
+.review-paragraph {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  line-height: 170%;
+  letter-spacing: 0;
+  color: rgb(46, 54, 62);
+  user-select: none;
+}
+
+.review-card-active .review-paragraph {
+  margin: 24px 0;
+  max-width: 430px;
+  font-size: 15px;
+}
+
+.review-card-inactive .review-paragraph {
+  margin: 24px 0;
+  max-width: 350px;
+  font-size: 12px;
+}
+
+.review-link {
+  border-bottom: 1px solid rgb(74, 148, 255);
+  width: max-content;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0;
+  color: rgb(74, 148, 255);
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+}
+
+.review-card-active .review-link {
+  font-size: 14px;
+}
+
+.review-card-inactive .review-link {
+  font-size: 11px;
+}
+
+.review-author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author-img {
+  border-radius: 50%;
+}
+
+.review-card-active .author-img {
+  width: 380px;
+  height: 380px;
+}
+
+.review-card-inactive .author-img {
+  width: 300px;
+  height: 300px;
+}
+
+.author-info {
+  margin-top: 28px;
+  margin-left: 5px;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.author-info-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 143%;
+  letter-spacing: 0;
+  color: rgb(46, 54, 62);
+  user-select: none;
+}
+
+.review-card-active .author-info-title {
+  font-size: 21px;
+}
+
+.review-card-inactive .author-info-title {
+  font-size: 17px;
+}
+
+.author-info span {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  line-height: 170%;
+  letter-spacing: 0;
+  color: rgb(166, 174, 182);
+  user-select: none;
+}
+
+.review-card-active .author-info span {
+  font-size: 16px;
+}
+
+.review-card-inactive .author-info span {
+  font-size: 13px;
+}
+
+.reviews__buttons {
+  margin: 70px 0 308px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.reviews__buttons-btn {
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  background: rgba(254, 216, 76);
+  cursor: pointer;
+}
+
+.reviews img:nth-child(6) {
+  top: 432px;
+  left: 1500px;
+  width: 152px;
+  height: 156px;
+  transform: rotate(-134deg);
+}
+
+.reviews img:nth-child(7) {
+  top: 280px;
+  left: 210px;
+  width: 127px;
+  height: 132px;
+  transform: rotate(-120deg);
+  filter: blur(14px);
 }
 
 /* СЕКЦИЯ С ГАЛЕРЕЕЙ */
